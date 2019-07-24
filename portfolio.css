@@ -1,0 +1,390 @@
+/*==== NAVBAR =====*/
+.nav-bar{
+    font-size: 1.6rem;
+    font-family: 'Marmelad', sans-serif;
+    }
+
+/* Add space between Bootstrap menu items */
+.navbar-nav li{
+    padding: 60px 15px 0 15px;
+}
+
+.myimage{
+    height: 100px;
+    position: relative;
+    bottom: 10px;
+    right: 2px;
+}
+
+.myFirstName{
+    font-size: 2rem;
+    margin: 0 0 0 25px;
+    position: relative;
+    bottom: 15px;
+}
+
+.myLastName{
+    font-size: 2rem;
+    margin: 0 25px 0 0;
+    position: relative;
+    bottom: 15px;
+}
+
+.akaName{
+    font-size: 1.5rem;
+    position: relative;
+    left: 130px;
+    width: 170px;
+}
+
+.myImage-navbar-mobile{
+    display: none;
+}
+
+/*==== JUMBOTRON =====*/
+
+.jumbotron{
+    background-image: url("images/blue-background.jpg");
+    background-size: cover;
+    height: 200px;
+}
+
+.brand-img{
+    height: 200px;
+    position: relative;
+    bottom: 70px;
+    right: 60px;
+    width: 450px;
+}
+
+.display-4{
+    color: aliceblue;
+}
+
+/*==== PARAGRAPH SECTION =====*/
+
+.headline-section{
+    font-size: 3rem;
+    text-align: center;
+    color: #414957;
+    margin: 20px;
+}
+
+.par-section{
+    margin: 0 15%;
+    font-size: 1.4rem;
+    color: #414957;
+}
+/*==== ICONS SECTION =======*/
+.icon-img{
+    width: 70px;
+}
+
+.section-wrap{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax( 100px, auto ) );
+  grid-gap: 50px;
+  text-align: center;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.img-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.icon-img{
+    margin-bottom: 15px;
+}
+
+/*======= MODAL PROJECT IMAGES WITH OVERLAYS =======*/
+
+.modal-wrap{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+.modal-container{
+    padding: 1em 0;
+    float: left;
+    width: 70%;
+  }
+
+  .content:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+
+  @media screen and (max-width: 640px){
+    .container{
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 900px){
+    .container{
+      width: 33.33333%;
+    }
+  }
+  
+  .container /*.title*/{
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .content .content-overlay{
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+
+  }
+  
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+  
+  .content-image{
+    width: 100%;
+  }
+  
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  
+  .content-details h3{
+    font-family: Corbel, Helvetica, Arial sans-serif;
+    color: rgb(194, 188, 188);
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+  
+  .content-details p{
+    font-family: Corbel, Helvetica, Arial sans-serif;
+    color: #fff;
+    font-size: 0.8em;
+  }
+  
+  .fadeIn-bottom{
+    top: 80%;
+  }
+/* ========== MODAL BODY =======*/ 
+.modal-title{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(140, 138, 141);
+}
+
+.modal-img{
+      width: 70%;
+      position: relative;
+      left: 15%;
+    }
+
+
+/*========== MODAL BUTTONS =========*/
+.link-container{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    right: 15%;
+  }
+  .btn-3{
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: rgb(140, 138, 141);
+    font-size: 18px;
+    cursor: pointer;
+    margin: 15px 25px;
+    background: white;
+  }
+  .link-span{
+    display: block;
+    padding: 15px 40px;
+  }
+  .btn-3::before, .btn-3::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: gray;
+  }
+  
+  .link-span::before, .link-span::after{
+    content:"";
+    width:2px;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: gray;
+  }
+  .btn-3:hover::before, .btn-3:hover::after{
+    width: 100%;
+  }
+  .btn-3:hover .link-span::before, .btn-3:hover .link-span::after{
+    height: 100%;
+  }
+
+.btn-3::after{
+    left: 0;
+    bottom: 0;
+    transition-delay: 0.6s;
+  }
+  .btn-3 .link-span::after{
+    transition-delay: 0.4s;
+    right: 0;
+    bottom: 0
+  }
+  .btn-3::before{
+    right: 0;
+    top: 0;
+    transition-delay: 0.2s;
+  }
+  .btn-3 .link-span::before{
+    transition-delay: 0s;
+    left: 0;
+    top: 0;
+  }
+  
+  .btn-3:hover::after{
+    transition-delay: 0s;
+  }
+  .btn-3:hover .link-span::after{
+    transition-delay: 0.2s;
+  }
+  .btn-3:hover::before{
+    transition-delay: 0.4s;
+  }
+  .btn-3:hover .link-span::before{
+    transition-delay: 0.6s;
+  }
+
+
+/*=========== CONTACT SECTION ============*/
+
+.contact-wrap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 70px;
+  border-right: 2px solid gray;
+  padding-right: 20px;
+  margin-bottom: 25px;
+}
+
+.contact-img{
+  
+  width: 50px;
+  margin-right: 15px;
+}
+
+.contact-sec-wrap{
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.to-top{
+  text-align: center;
+  margin: 0 auto;
+  margin: 30px;
+}
+@media (max-width: 1000px){
+    .contact-sec-wrap{
+      flex-wrap: wrap;
+    }
+    .myImage-navbar-mobile{
+        display: block;
+        margin: 0 auto;
+    }
+    .myImage-navbar-desktop{
+        display: none;
+    }
+    .navbar-nav li{
+        padding: 0;
+    }
+}
+
+@media (max-width: 800px){
+    .modal-wrap{
+      grid-template-columns: 1fr;
+    }
+
+    .brand-img{
+      height: 150px;
+      top: 0px;
+      right: 0;
+      width: 350px;
+  }
+
+  }
+
+@media (max-width: 600px){
+    .brand-img{
+        bottom: 30px;
+    }
+}
+@media (max-width: 500px){
+    .myFirstName{
+      font-size: 1rem;
+    }
+
+    .myLastName{
+      font-size: 1rem;
+
+    }
+}
