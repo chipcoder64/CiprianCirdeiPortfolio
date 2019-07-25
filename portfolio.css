@@ -1,3 +1,7 @@
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
 /*==== NAVBAR =====*/
 .nav-bar{
     font-size: 1.6rem;
@@ -343,6 +347,15 @@
   margin: 0 auto;
   margin: 30px;
 }
+
+.contact-link{
+  color: black;
+}
+
+.contact-link:hover{
+  color: gray;
+  text-decoration: none;
+}
 @media (max-width: 1000px){
     .contact-sec-wrap{
       flex-wrap: wrap;
@@ -377,7 +390,20 @@
     .brand-img{
         bottom: 30px;
     }
-}
+    .contact-sec-wrap{
+      flex-direction: column;
+      flex-wrap: nowrap;
+      height: auto;
+      
+    }
+
+    .contact-wrap{
+      border: none;
+    }
+  }
+
+
+
 @media (max-width: 500px){
     .myFirstName{
       font-size: 1rem;
