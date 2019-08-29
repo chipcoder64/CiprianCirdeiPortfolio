@@ -70,9 +70,11 @@
 
 /*=======DISSAPPEARING JUMBOTRON AFTER 9 SECONDS*/
 .jumbotronContainer{
-    background-image: url('images/Spectrum_electromagnetic.jpg'); 
-    width: 95vw !important; 
-    height: 110vh !important;
+    background-image: url('images/maxresdefault.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw !important; 
+    height: 100vh !important;
 }
 
 .selfWrite{
@@ -407,7 +409,7 @@
 @media (max-width: 800px){
   .jumbotron1{
     height: 160px;
-    }
+}
 
     .modal-wrap{
       grid-template-columns: 1fr;
@@ -418,7 +420,7 @@
       bottom: 0px;
       right: 0;
       width: 350px;
-    }
+  }
 
   }
 
@@ -439,7 +441,7 @@
 
     .akaName{
       left: 70px;
-    }
+  }
   }
 
 
